@@ -1,0 +1,526 @@
+<Order xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="rrn:org.xcbl:schemas/xcbl/v4_0/core/core.xsd" xmlns="rrn:org.xcbl:schemas/xcbl/v4_0/ordermanagement/v1_0/ordermanagement.xsd">
+    <OrderHeader>
+        <OrderNumber>
+            <BuyerOrderNumber>152865-41</BuyerOrderNumber>
+            <SellerOrderNumber />
+        </OrderNumber>
+        <OrderIssueDate>2025-02-11T12:11:52</OrderIssueDate>
+        <OrderReferences>
+            <AccountCode>
+                <core:RefNum>POR-1332331</core:RefNum>
+            </AccountCode>
+            <OtherOrderReferences>
+                <core:ReferenceCoded>
+                    <core:ReferenceTypeCoded>AgentsReference</core:ReferenceTypeCoded>
+                    <core:PrimaryReference>
+                        <core:RefNum>331969962</core:RefNum>
+                    </core:PrimaryReference>
+                </core:ReferenceCoded>
+                <core:ReferenceCoded>
+                    <core:ReferenceTypeCoded>AdditionalReferenceNumber</core:ReferenceTypeCoded>
+                    <core:PrimaryReference>
+                        <core:RefNum />
+                    </core:PrimaryReference>
+                </core:ReferenceCoded>
+                <core:ReferenceCoded>
+                    <core:ReferenceTypeCoded>SellersReferenceNumber</core:ReferenceTypeCoded>
+                    <core:PrimaryReference>
+                        <core:RefNum />
+                    </core:PrimaryReference>
+                </core:ReferenceCoded>
+                <core:ReferenceCoded>
+                    <core:ReferenceTypeCoded>Status</core:ReferenceTypeCoded>
+                    <core:PrimaryReference>
+                        <core:RefNum />
+                    </core:PrimaryReference>
+                </core:ReferenceCoded>
+                <core:ReferenceCoded>
+                    <core:ReferenceTypeCoded>AccountNumber</core:ReferenceTypeCoded>
+                    <core:PrimaryReference>
+                        <core:RefNum />
+                    </core:PrimaryReference>
+                </core:ReferenceCoded>
+                <core:ReferenceCoded>
+                    <core:ReferenceTypeCoded>Other</core:ReferenceTypeCoded>
+                    <core:ReferenceTypeCodedOther>TicketID</core:ReferenceTypeCodedOther>
+                    <core:PrimaryReference>
+                        <core:RefNum />
+                    </core:PrimaryReference>
+                </core:ReferenceCoded>
+                <core:ReferenceCoded>
+                    <core:ReferenceTypeCoded>Other</core:ReferenceTypeCoded>
+                    <core:ReferenceTypeCodedOther>WarrantyRequestedStartTime</core:ReferenceTypeCodedOther>
+                    <core:PrimaryReference>
+                        <core:RefNum />
+                    </core:PrimaryReference>
+                </core:ReferenceCoded>
+                <core:ReferenceCoded>
+                    <core:ReferenceTypeCoded>Other</core:ReferenceTypeCoded>
+                    <core:ReferenceTypeCodedOther>WarrantyRequestedEndTime</core:ReferenceTypeCodedOther>
+                    <core:PrimaryReference>
+                        <core:RefNum />
+                    </core:PrimaryReference>
+                </core:ReferenceCoded>
+                <core:ReferenceCoded>
+                    <core:ReferenceTypeCoded>Other</core:ReferenceTypeCoded>
+                    <core:ReferenceTypeCodedOther>DeliveryType</core:ReferenceTypeCodedOther>
+                    <core:PrimaryReference>
+                        <core:RefNum>Null</core:RefNum>
+                    </core:PrimaryReference>
+                </core:ReferenceCoded>
+                <core:ReferenceCoded>
+                    <core:ReferenceTypeCoded>Other</core:ReferenceTypeCoded>
+                    <core:ReferenceTypeCodedOther>CrewID</core:ReferenceTypeCodedOther>
+                    <core:PrimaryReference>
+                        <core:RefNum>-1</core:RefNum>
+                    </core:PrimaryReference>
+                </core:ReferenceCoded>
+            </OtherOrderReferences>
+        </OrderReferences>
+        <Purpose>
+            <core:PurposeCoded>Original</core:PurposeCoded>
+        </Purpose>
+        <OrderType>
+            <core:OrderTypeCoded>Other</core:OrderTypeCoded>
+            <core:OrderTypeCodedOther>Memo</core:OrderTypeCodedOther>
+        </OrderType>
+        <OrderCurrency>
+            <core:CurrencyCoded>USD</core:CurrencyCoded>
+        </OrderCurrency>
+        <OrderLanguage>
+            <core:LanguageCoded>en</core:LanguageCoded>
+        </OrderLanguage>
+        <OrderDates>
+            <ValidityDates>
+                <core:StartDate>2025-03-12T00:00:00</core:StartDate>
+                <core:EndDate>2025-03-12T00:00:00</core:EndDate>
+            </ValidityDates>
+        </OrderDates>
+        <OrderParty>
+            <BuyerParty xmlns:core="rrn:org.xcbl:schemas/xcbl/v4_0/core/core.xsd">
+                <core:PartyID>
+                    <core:Agency>
+                        <core:AgencyCoded>AssignedByMarketPlace</core:AgencyCoded>
+                    </core:Agency>
+                    <core:Ident>22B466A4-0AC4-4DB8-BC99-18158643261E</core:Ident>
+                </core:PartyID>
+                <core:ListOfIdentifier>
+                    <core:Identifier>
+                        <core:Agency>
+                            <core:AgencyCoded>AssignedBySellerOrSellersAgent</core:AgencyCoded>
+                        </core:Agency>
+                        <core:Ident>POR-1332331</core:Ident>
+                    </core:Identifier>
+                </core:ListOfIdentifier>
+                <core:NameAddress>
+                    <core:Name1>Richmond American Homes - Portland</core:Name1>
+                    <core:Street>4350 S Monaco St</core:Street>
+                    <core:StreetSupplement1 />
+                    <core:PostalCode>80237</core:PostalCode>
+                    <core:City>Denver</core:City>
+                    <core:Region>
+                        <core:RegionCoded>USCO</core:RegionCoded>
+                    </core:Region>
+                </core:NameAddress>
+                <core:PrimaryContact>
+                    <core:ContactName>TBD</core:ContactName>
+                    <core:ListOfContactNumber>
+                        <core:ContactNumber>
+                            <core:ContactNumberValue>(999) 999-9999</core:ContactNumberValue>
+                            <core:ContactNumberTypeCoded>TelephoneNumber</core:ContactNumberTypeCoded>
+                        </core:ContactNumber>
+                        <core:ContactNumber>
+                            <core:ContactNumberValue>javier.garcia@mdch.com</core:ContactNumberValue>
+                            <core:ContactNumberTypeCoded>EmailAddress</core:ContactNumberTypeCoded>
+                        </core:ContactNumber>
+                        <core:ContactNumber>
+                            <core:ContactNumberValue>ryan.butler@insulation-holdings.com</core:ContactNumberValue>
+                            <core:ContactNumberTypeCoded>Other</core:ContactNumberTypeCoded>
+                            <core:ContactNumberTypeCodedOther>E-Destination EmailAddress</core:ContactNumberTypeCodedOther>
+                        </core:ContactNumber>
+                        <core:ContactNumber>
+                            <core:ContactNumberValue>dee.ewert@insulation-holdings.com</core:ContactNumberValue>
+                            <core:ContactNumberTypeCoded>Other</core:ContactNumberTypeCoded>
+                            <core:ContactNumberTypeCodedOther>Accounting EmailAddress</core:ContactNumberTypeCodedOther>
+                        </core:ContactNumber>
+                        <core:ContactNumber>
+                            <core:ContactNumberValue>ryan.butler@insulation-holdings.com</core:ContactNumberValue>
+                            <core:ContactNumberTypeCoded>Other</core:ContactNumberTypeCoded>
+                            <core:ContactNumberTypeCodedOther>Warranty EmailAddress</core:ContactNumberTypeCodedOther>
+                        </core:ContactNumber>
+                        <core:ContactNumber>
+                            <core:ContactNumberValue>ryan.butler@insulation-holdings.com</core:ContactNumberValue>
+                            <core:ContactNumberTypeCoded>Other</core:ContactNumberTypeCoded>
+                            <core:ContactNumberTypeCodedOther>BidConnect EmailAddress</core:ContactNumberTypeCodedOther>
+                        </core:ContactNumber>
+                    </core:ListOfContactNumber>
+                </core:PrimaryContact>
+            </BuyerParty>
+            <SellerParty xmlns:core="rrn:org.xcbl:schemas/xcbl/v4_0/core/core.xsd">
+                <core:PartyID>
+                    <core:Agency>
+                        <core:AgencyCoded>AssignedByMarketPlace</core:AgencyCoded>
+                    </core:Agency>
+                    <core:Ident>5DB0654E-0176-4EF9-9BBC-710220C88DAC</core:Ident>
+                </core:PartyID>
+                <core:NameAddress>
+                    <core:Name1>BUILDERS INSULATION</core:Name1>
+                    <core:Street>PO BOX 7788</core:Street>
+                    <core:StreetSupplement1 />
+                    <core:PostalCode>53707</core:PostalCode>
+                    <core:City>MADISON</core:City>
+                    <core:Region>
+                        <core:RegionCoded>USWI</core:RegionCoded>
+                    </core:Region>
+                </core:NameAddress>
+                <core:PrimaryContact>
+                    <core:ContactName>BRANDON BANZHAF</core:ContactName>
+                    <core:ListOfContactNumber>
+                        <core:ContactNumber>
+                            <core:ContactNumberValue>(608) 504-7320</core:ContactNumberValue>
+                            <core:ContactNumberTypeCoded>TelephoneNumber</core:ContactNumberTypeCoded>
+                        </core:ContactNumber>
+                        <core:ContactNumber>
+                            <core:ContactNumberValue>brandon.banzhaf@insulation-holdings.com</core:ContactNumberValue>
+                            <core:ContactNumberTypeCoded>EmailAddress</core:ContactNumberTypeCoded>
+                        </core:ContactNumber>
+                    </core:ListOfContactNumber>
+                </core:PrimaryContact>
+            </SellerParty>
+            <ShipToParty xmlns:core="rrn:org.xcbl:schemas/xcbl/v4_0/core/core.xsd">
+                <core:PartyID>
+                    <core:Agency>
+                        <core:AgencyCoded>AssignedByMarketPlace</core:AgencyCoded>
+                    </core:Agency>
+                    <core:Ident>22B466A4-0AC4-4DB8-BC99-18158643261E</core:Ident>
+                </core:PartyID>
+                <core:NameAddress>
+                    <core:Name1>33750112 - 916 NW 178TH WAY - 112/</core:Name1>
+                    <core:Street>916 NW 178TH WAY</core:Street>
+                    <core:StreetSupplement1 />
+                    <core:PostalCode>98642</core:PostalCode>
+                    <core:City>Ridgefield</core:City>
+                    <core:Region>
+                        <core:RegionCoded>USWA</core:RegionCoded>
+                    </core:Region>
+                </core:NameAddress>
+                <core:PrimaryContact>
+                    <core:ContactName>Jeff Coughlin</core:ContactName>
+                    <core:ListOfContactNumber>
+                        <core:ContactNumber>
+                            <core:ContactNumberValue>208-866-7627</core:ContactNumberValue>
+                            <core:ContactNumberTypeCoded>TelephoneNumber</core:ContactNumberTypeCoded>
+                        </core:ContactNumber>
+                        <core:ContactNumber>
+                            <core:ContactNumberValue>Jeff.Coughlin@mdch.com</core:ContactNumberValue>
+                            <core:ContactNumberTypeCoded>EmailAddress</core:ContactNumberTypeCoded>
+                        </core:ContactNumber>
+                    </core:ListOfContactNumber>
+                </core:PrimaryContact>
+            </ShipToParty>
+            <BillToParty xmlns:core="rrn:org.xcbl:schemas/xcbl/v4_0/core/core.xsd">
+                <core:PartyID>
+                    <core:Agency>
+                        <core:AgencyCoded>AssignedByMarketPlace</core:AgencyCoded>
+                    </core:Agency>
+                    <core:Ident>22B466A4-0AC4-4DB8-BC99-18158643261E</core:Ident>
+                </core:PartyID>
+                <core:NameAddress>
+                    <core:Name1>North Haven Phase 4</core:Name1>
+                    <core:Street>222 NE Park Plaza Drive Suite 127</core:Street>
+                    <core:StreetSupplement1 />
+                    <core:PostalCode>98684</core:PostalCode>
+                    <core:City>Vancouver</core:City>
+                    <core:Region>
+                        <core:RegionCoded>USWA</core:RegionCoded>
+                    </core:Region>
+                </core:NameAddress>
+                <core:PrimaryContact>
+                    <core:ContactName />
+                    <core:ListOfContactNumber>
+                        <core:ContactNumber>
+                            <core:ContactNumberValue>3608697505</core:ContactNumberValue>
+                            <core:ContactNumberTypeCoded>TelephoneNumber</core:ContactNumberTypeCoded>
+                        </core:ContactNumber>
+                        <core:ContactNumber>
+                            <core:ContactNumberValue>PORInvoices@mdch.com</core:ContactNumberValue>
+                            <core:ContactNumberTypeCoded>EmailAddress</core:ContactNumberTypeCoded>
+                        </core:ContactNumber>
+                    </core:ListOfContactNumber>
+                </core:PrimaryContact>
+            </BillToParty>
+        </OrderParty>
+        <OrderHeaderNote />
+        <ListOfNameValueSet>
+            <core:NameValueSet>
+                <core:SetName>Task</core:SetName>
+                <core:SetID>41</core:SetID>
+                <core:ListOfNameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>Name</core:Name>
+                        <core:Value>Insulate Tubs/Soffits</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>Description</core:Name>
+                        <core:Value />
+                    </core:NameValuePair>
+                </core:ListOfNameValuePair>
+            </core:NameValueSet>
+            <core:NameValueSet>
+                <core:SetName>Job</core:SetName>
+                <core:SetID>152865</core:SetID>
+                <core:ListOfNameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>Name</core:Name>
+                        <core:Value>33750112 - 916 NW 178TH WAY - 112/</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>Address1</core:Name>
+                        <core:Value>916 NW 178TH WAY</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>Address2</core:Name>
+                        <core:Value />
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>City</core:Name>
+                        <core:Value>Ridgefield</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>PostalCode</core:Name>
+                        <core:Value>98642</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>RegionCoded</core:Name>
+                        <core:Value>USWA</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>Subdivision</core:Name>
+                        <core:Value>North Haven Phase 4</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>SubdivisionID</core:Name>
+                        <core:Value>34081720</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>Phase</core:Name>
+                        <core:Value>Phase 1 - All Lots</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>Lot</core:Name>
+                        <core:Value>112</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>Block</core:Name>
+                        <core:Value />
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>Plan</core:Name>
+                        <core:Value>G893</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>Elevation</core:Name>
+                        <core:Value />
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>Swing</core:Name>
+                        <core:Value>S</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>PermitNumber</core:Name>
+                        <core:Value>NHC202401696</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>StartDate</core:Name>
+                        <core:Value>2/10/2025</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>EndDate</core:Name>
+                        <core:Value>7/1/2025</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>ColorPackage</core:Name>
+                        <core:Value />
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>JIOID</core:Name>
+                        <core:Value>0</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>PrimaryFirstName</core:Name>
+                        <core:Value>Jeff</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>PrimaryLastName</core:Name>
+                        <core:Value>Coughlin</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>PrimaryPhoneNumber</core:Name>
+                        <core:Value>208-866-7627</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>PrimaryFaxNumber</core:Name>
+                        <core:Value />
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>PrimaryEmailAddress</core:Name>
+                        <core:Value>Jeff.Coughlin@mdch.com</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>CommunityCode</core:Name>
+                        <core:Value />
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>CommunityID</core:Name>
+                        <core:Value>0</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>GroupDescription</core:Name>
+                        <core:Value>Default</core:Value>
+                    </core:NameValuePair>
+                </core:ListOfNameValuePair>
+            </core:NameValueSet>
+        </ListOfNameValueSet>
+    </OrderHeader>
+    <OrderDetail>
+        <ListOfItemDetail>
+            <ItemDetail>
+                <BaseItemDetail>
+                    <LineItemNum>
+                        <core:BuyerLineItemNum>103178052</core:BuyerLineItemNum>
+                    </LineItemNum>
+                    <ItemIdentifiers>
+                        <core:PartNumbers>
+                            <core:SellerPartNumber>
+                                <core:PartID>CONTRACT</core:PartID>
+                            </core:SellerPartNumber>
+                            <core:BuyerPartNumber>
+                                <core:PartID>111111111</core:PartID>
+                            </core:BuyerPartNumber>
+                        </core:PartNumbers>
+                        <core:ItemDescription>For Schedule Only</core:ItemDescription>
+                    </ItemIdentifiers>
+                    <ListOfDimension>
+                        <core:Dimension>
+                            <core:Measurement>
+                                <core:MeasurementValue>0.00</core:MeasurementValue>
+                                <core:UnitOfMeasurement>
+                                    <core:UOMCoded>EA</core:UOMCoded>
+                                </core:UnitOfMeasurement>
+                            </core:Measurement>
+                            <core:DimensionCoded>LengthDimension</core:DimensionCoded>
+                        </core:Dimension>
+                    </ListOfDimension>
+                    <TotalQuantity>
+                        <core:QuantityValue>1</core:QuantityValue>
+                        <core:UnitOfMeasurement>
+                            <core:UOMCoded>EA</core:UOMCoded>
+                        </core:UnitOfMeasurement>
+                    </TotalQuantity>
+                </BaseItemDetail>
+                <PricingDetail>
+                    <core:ListOfPrice>
+                        <core:Price>
+                            <core:PricingType>
+                                <core:PriceTypeCoded>Other</core:PriceTypeCoded>
+                                <core:PriceTypeCodedOther>Requested</core:PriceTypeCodedOther>
+                            </core:PricingType>
+                            <core:UnitPrice>
+                                <core:UnitPriceValue>0.00</core:UnitPriceValue>
+                            </core:UnitPrice>
+                            <core:UnitOfMeasurement>
+                                <core:UOMCoded>EA</core:UOMCoded>
+                            </core:UnitOfMeasurement>
+                        </core:Price>
+                    </core:ListOfPrice>
+                    <core:LineItemSubTotal>
+                        <core:MonetaryAmount>0.00</core:MonetaryAmount>
+                    </core:LineItemSubTotal>
+                </PricingDetail>
+                <ListOfNameValueSet>
+                    <core:NameValueSet>
+                        <core:SetName>OtherItemDescriptors</core:SetName>
+                        <core:SetID>1</core:SetID>
+                        <core:ListOfNameValuePair>
+                            <core:NameValuePair>
+                                <core:Name>OptionColor1</core:Name>
+                                <core:Value />
+                            </core:NameValuePair>
+                            <core:NameValuePair>
+                                <core:Name>OptionColor2</core:Name>
+                                <core:Value />
+                            </core:NameValuePair>
+                            <core:NameValuePair>
+                                <core:Name>OptionColor3</core:Name>
+                                <core:Value />
+                            </core:NameValuePair>
+                            <core:NameValuePair>
+                                <core:Name>ExtText1</core:Name>
+                                <core:Value />
+                            </core:NameValuePair>
+                            <core:NameValuePair>
+                                <core:Name>ExtText2</core:Name>
+                                <core:Value />
+                            </core:NameValuePair>
+                            <core:NameValuePair>
+                                <core:Name>ExtText3</core:Name>
+                                <core:Value />
+                            </core:NameValuePair>
+                            <core:NameValuePair>
+                                <core:Name>ExtText4</core:Name>
+                                <core:Value />
+                            </core:NameValuePair>
+                            <core:NameValuePair>
+                                <core:Name>ExtText5</core:Name>
+                                <core:Value />
+                            </core:NameValuePair>
+                            <core:NameValuePair>
+                                <core:Name>ExtText6</core:Name>
+                                <core:Value />
+                            </core:NameValuePair>
+                            <core:NameValuePair>
+                                <core:Name>SelectionDesc</core:Name>
+                                <core:Value />
+                            </core:NameValuePair>
+                            <core:NameValuePair>
+                                <core:Name>HomeSelectionInd</core:Name>
+                                <core:Value>0</core:Value>
+                            </core:NameValuePair>
+                            <core:NameValuePair>
+                                <core:Name>PackageItemID</core:Name>
+                                <core:Value />
+                            </core:NameValuePair>
+                            <core:NameValuePair>
+                                <core:Name>DoNotTransmitSPConnect</core:Name>
+                                <core:Value />
+                            </core:NameValuePair>
+                        </core:ListOfNameValuePair>
+                    </core:NameValueSet>
+                </ListOfNameValueSet>
+            </ItemDetail>
+        </ListOfItemDetail>
+    </OrderDetail>
+    <OrderSummary>
+        <NumberOfLines>1</NumberOfLines>
+        <ListOfTaxSummary>
+            <core:TaxSummary>
+                <core:TaxTypeCoded>Total</core:TaxTypeCoded>
+                <core:TaxTypeCodedOther>
+                    <core:Agency>
+                        <core:AgencyCoded>AssignedByMarketPlace</core:AgencyCoded>
+                    </core:Agency>
+                    <core:Ident />
+                </core:TaxTypeCodedOther>
+                <core:TaxFunctionQualifierCoded>Tax</core:TaxFunctionQualifierCoded>
+                <core:TaxCategoryCoded>Other</core:TaxCategoryCoded>
+                <core:TaxAmount>0.00</core:TaxAmount>
+            </core:TaxSummary>
+        </ListOfTaxSummary>
+        <OrderSubTotal>
+            <core:MonetaryAmount>0.00</core:MonetaryAmount>
+        </OrderSubTotal>
+        <OrderTotal>
+            <core:MonetaryAmount>0.00</core:MonetaryAmount>
+        </OrderTotal>
+    </OrderSummary>
+</Order>

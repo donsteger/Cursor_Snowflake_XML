@@ -1,0 +1,516 @@
+<Order xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="rrn:org.xcbl:schemas/xcbl/v4_0/core/core.xsd" xmlns="rrn:org.xcbl:schemas/xcbl/v4_0/ordermanagement/v1_0/ordermanagement.xsd">
+    <OrderHeader>
+        <OrderNumber>
+            <BuyerOrderNumber>10130718-31</BuyerOrderNumber>
+            <SellerOrderNumber />
+        </OrderNumber>
+        <OrderIssueDate>2024-12-27T14:35:32</OrderIssueDate>
+        <OrderReferences>
+            <AccountCode>
+                <core:RefNum>84-427226</core:RefNum>
+            </AccountCode>
+            <OtherOrderReferences>
+                <core:ReferenceCoded>
+                    <core:ReferenceTypeCoded>AgentsReference</core:ReferenceTypeCoded>
+                    <core:PrimaryReference>
+                        <core:RefNum>327844958</core:RefNum>
+                    </core:PrimaryReference>
+                </core:ReferenceCoded>
+                <core:ReferenceCoded>
+                    <core:ReferenceTypeCoded>AdditionalReferenceNumber</core:ReferenceTypeCoded>
+                    <core:PrimaryReference>
+                        <core:RefNum />
+                    </core:PrimaryReference>
+                </core:ReferenceCoded>
+                <core:ReferenceCoded>
+                    <core:ReferenceTypeCoded>SellersReferenceNumber</core:ReferenceTypeCoded>
+                    <core:PrimaryReference>
+                        <core:RefNum />
+                    </core:PrimaryReference>
+                </core:ReferenceCoded>
+                <core:ReferenceCoded>
+                    <core:ReferenceTypeCoded>Status</core:ReferenceTypeCoded>
+                    <core:PrimaryReference>
+                        <core:RefNum />
+                    </core:PrimaryReference>
+                </core:ReferenceCoded>
+                <core:ReferenceCoded>
+                    <core:ReferenceTypeCoded>AccountNumber</core:ReferenceTypeCoded>
+                    <core:PrimaryReference>
+                        <core:RefNum />
+                    </core:PrimaryReference>
+                </core:ReferenceCoded>
+                <core:ReferenceCoded>
+                    <core:ReferenceTypeCoded>Other</core:ReferenceTypeCoded>
+                    <core:ReferenceTypeCodedOther>TicketID</core:ReferenceTypeCodedOther>
+                    <core:PrimaryReference>
+                        <core:RefNum />
+                    </core:PrimaryReference>
+                </core:ReferenceCoded>
+                <core:ReferenceCoded>
+                    <core:ReferenceTypeCoded>Other</core:ReferenceTypeCoded>
+                    <core:ReferenceTypeCodedOther>WarrantyRequestedStartTime</core:ReferenceTypeCodedOther>
+                    <core:PrimaryReference>
+                        <core:RefNum />
+                    </core:PrimaryReference>
+                </core:ReferenceCoded>
+                <core:ReferenceCoded>
+                    <core:ReferenceTypeCoded>Other</core:ReferenceTypeCoded>
+                    <core:ReferenceTypeCodedOther>WarrantyRequestedEndTime</core:ReferenceTypeCodedOther>
+                    <core:PrimaryReference>
+                        <core:RefNum />
+                    </core:PrimaryReference>
+                </core:ReferenceCoded>
+                <core:ReferenceCoded>
+                    <core:ReferenceTypeCoded>Other</core:ReferenceTypeCoded>
+                    <core:ReferenceTypeCodedOther>DeliveryType</core:ReferenceTypeCodedOther>
+                    <core:PrimaryReference>
+                        <core:RefNum>Null</core:RefNum>
+                    </core:PrimaryReference>
+                </core:ReferenceCoded>
+                <core:ReferenceCoded>
+                    <core:ReferenceTypeCoded>Other</core:ReferenceTypeCoded>
+                    <core:ReferenceTypeCodedOther>CrewID</core:ReferenceTypeCodedOther>
+                    <core:PrimaryReference>
+                        <core:RefNum>-1</core:RefNum>
+                    </core:PrimaryReference>
+                </core:ReferenceCoded>
+            </OtherOrderReferences>
+        </OrderReferences>
+        <Purpose>
+            <core:PurposeCoded>Original</core:PurposeCoded>
+        </Purpose>
+        <OrderType>
+            <core:OrderTypeCoded>Other</core:OrderTypeCoded>
+            <core:OrderTypeCodedOther>Memo</core:OrderTypeCodedOther>
+        </OrderType>
+        <OrderCurrency>
+            <core:CurrencyCoded>USD</core:CurrencyCoded>
+        </OrderCurrency>
+        <OrderLanguage>
+            <core:LanguageCoded>en</core:LanguageCoded>
+        </OrderLanguage>
+        <OrderDates>
+            <ValidityDates>
+                <core:StartDate>2025-01-17T00:00:00</core:StartDate>
+                <core:EndDate>2025-01-17T00:00:00</core:EndDate>
+            </ValidityDates>
+        </OrderDates>
+        <OrderParty>
+            <BuyerParty xmlns:core="rrn:org.xcbl:schemas/xcbl/v4_0/core/core.xsd">
+                <core:PartyID>
+                    <core:Agency>
+                        <core:AgencyCoded>AssignedByMarketPlace</core:AgencyCoded>
+                    </core:Agency>
+                    <core:Ident>8F58E8B4-8EEE-4F5F-A2AC-019508E68FE4</core:Ident>
+                </core:PartyID>
+                <core:ListOfIdentifier>
+                    <core:Identifier>
+                        <core:Agency>
+                            <core:AgencyCoded>AssignedBySellerOrSellersAgent</core:AgencyCoded>
+                        </core:Agency>
+                        <core:Ident>84-427226</core:Ident>
+                    </core:Identifier>
+                </core:ListOfIdentifier>
+                <core:NameAddress>
+                    <core:Name1>Beazer Homes - Indianapolis</core:Name1>
+                    <core:Street>9465 Counselors Row, Suite 125</core:Street>
+                    <core:StreetSupplement1 />
+                    <core:PostalCode>46240</core:PostalCode>
+                    <core:City>Indianapolis</core:City>
+                    <core:Region>
+                        <core:RegionCoded>USIN</core:RegionCoded>
+                    </core:Region>
+                </core:NameAddress>
+                <core:PrimaryContact>
+                    <core:ContactName>Beth Clark</core:ContactName>
+                    <core:ListOfContactNumber>
+                        <core:ContactNumber>
+                            <core:ContactNumberValue>(317) 569-3533</core:ContactNumberValue>
+                            <core:ContactNumberTypeCoded>TelephoneNumber</core:ContactNumberTypeCoded>
+                        </core:ContactNumber>
+                        <core:ContactNumber>
+                            <core:ContactNumberValue>bclark@beazer.com</core:ContactNumberValue>
+                            <core:ContactNumberTypeCoded>EmailAddress</core:ContactNumberTypeCoded>
+                        </core:ContactNumber>
+                        <core:ContactNumber>
+                            <core:ContactNumberValue>thomas.wilson@insulation-holdings.com</core:ContactNumberValue>
+                            <core:ContactNumberTypeCoded>Other</core:ContactNumberTypeCoded>
+                            <core:ContactNumberTypeCodedOther>E-Destination EmailAddress</core:ContactNumberTypeCodedOther>
+                        </core:ContactNumber>
+                        <core:ContactNumber>
+                            <core:ContactNumberValue>thomas.wilson@insulation-holdings.com</core:ContactNumberValue>
+                            <core:ContactNumberTypeCoded>Other</core:ContactNumberTypeCoded>
+                            <core:ContactNumberTypeCodedOther>BidConnect EmailAddress</core:ContactNumberTypeCodedOther>
+                        </core:ContactNumber>
+                    </core:ListOfContactNumber>
+                </core:PrimaryContact>
+            </BuyerParty>
+            <SellerParty xmlns:core="rrn:org.xcbl:schemas/xcbl/v4_0/core/core.xsd">
+                <core:PartyID>
+                    <core:Agency>
+                        <core:AgencyCoded>AssignedByMarketPlace</core:AgencyCoded>
+                    </core:Agency>
+                    <core:Ident>5DB0654E-0176-4EF9-9BBC-710220C88DAC</core:Ident>
+                </core:PartyID>
+                <core:NameAddress>
+                    <core:Name1>BUILDERS INSULATION</core:Name1>
+                    <core:Street>PO BOX 7788</core:Street>
+                    <core:StreetSupplement1 />
+                    <core:PostalCode>53707</core:PostalCode>
+                    <core:City>MADISON</core:City>
+                    <core:Region>
+                        <core:RegionCoded>USWI</core:RegionCoded>
+                    </core:Region>
+                </core:NameAddress>
+                <core:PrimaryContact>
+                    <core:ContactName>BRANDON BANZHAF</core:ContactName>
+                    <core:ListOfContactNumber>
+                        <core:ContactNumber>
+                            <core:ContactNumberValue>(608) 504-7320</core:ContactNumberValue>
+                            <core:ContactNumberTypeCoded>TelephoneNumber</core:ContactNumberTypeCoded>
+                        </core:ContactNumber>
+                        <core:ContactNumber>
+                            <core:ContactNumberValue>brandon.banzhaf@insulation-holdings.com</core:ContactNumberValue>
+                            <core:ContactNumberTypeCoded>EmailAddress</core:ContactNumberTypeCoded>
+                        </core:ContactNumber>
+                    </core:ListOfContactNumber>
+                </core:PrimaryContact>
+            </SellerParty>
+            <ShipToParty xmlns:core="rrn:org.xcbl:schemas/xcbl/v4_0/core/core.xsd">
+                <core:PartyID>
+                    <core:Agency>
+                        <core:AgencyCoded>AssignedByMarketPlace</core:AgencyCoded>
+                    </core:Agency>
+                    <core:Ident>8F58E8B4-8EEE-4F5F-A2AC-019508E68FE4</core:Ident>
+                </core:PartyID>
+                <core:NameAddress>
+                    <core:Name1>84210310319 - 20390 Hudson Bay LN</core:Name1>
+                    <core:Street>20390 Hudson Bay LN</core:Street>
+                    <core:StreetSupplement1 />
+                    <core:PostalCode>46074</core:PostalCode>
+                    <core:City>Westfield</core:City>
+                    <core:Region>
+                        <core:RegionCoded>USIN</core:RegionCoded>
+                    </core:Region>
+                </core:NameAddress>
+                <core:PrimaryContact>
+                    <core:ContactName>Isaac Smith</core:ContactName>
+                    <core:ListOfContactNumber>
+                        <core:ContactNumber>
+                            <core:ContactNumberValue>3177195659</core:ContactNumberValue>
+                            <core:ContactNumberTypeCoded>TelephoneNumber</core:ContactNumberTypeCoded>
+                        </core:ContactNumber>
+                        <core:ContactNumber>
+                            <core:ContactNumberValue>isaac.smith@beazer.com</core:ContactNumberValue>
+                            <core:ContactNumberTypeCoded>EmailAddress</core:ContactNumberTypeCoded>
+                        </core:ContactNumber>
+                    </core:ListOfContactNumber>
+                </core:PrimaryContact>
+            </ShipToParty>
+            <BillToParty xmlns:core="rrn:org.xcbl:schemas/xcbl/v4_0/core/core.xsd">
+                <core:PartyID>
+                    <core:Agency>
+                        <core:AgencyCoded>AssignedByMarketPlace</core:AgencyCoded>
+                    </core:Agency>
+                    <core:Ident>8F58E8B4-8EEE-4F5F-A2AC-019508E68FE4</core:Ident>
+                </core:PartyID>
+                <core:NameAddress>
+                    <core:Name1>Monon Corner</core:Name1>
+                    <core:Street>9465 Counselors Row, Suite 125</core:Street>
+                    <core:StreetSupplement1 />
+                    <core:PostalCode>46240</core:PostalCode>
+                    <core:City>Indianapolis</core:City>
+                    <core:Region>
+                        <core:RegionCoded>USIN</core:RegionCoded>
+                    </core:Region>
+                </core:NameAddress>
+                <core:PrimaryContact>
+                    <core:ContactName />
+                    <core:ListOfContactNumber>
+                        <core:ContactNumber>
+                            <core:ContactNumberValue>(317) 719-5659</core:ContactNumberValue>
+                            <core:ContactNumberTypeCoded>TelephoneNumber</core:ContactNumberTypeCoded>
+                        </core:ContactNumber>
+                        <core:ContactNumber>
+                            <core:ContactNumberValue>isaac.smith@beazer.com</core:ContactNumberValue>
+                            <core:ContactNumberTypeCoded>EmailAddress</core:ContactNumberTypeCoded>
+                        </core:ContactNumber>
+                    </core:ListOfContactNumber>
+                </core:PrimaryContact>
+            </BillToParty>
+        </OrderParty>
+        <OrderHeaderNote />
+        <ListOfNameValueSet>
+            <core:NameValueSet>
+                <core:SetName>Task</core:SetName>
+                <core:SetID>31</core:SetID>
+                <core:ListOfNameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>Name</core:Name>
+                        <core:Value>Pre-batt tubs</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>Description</core:Name>
+                        <core:Value />
+                    </core:NameValuePair>
+                </core:ListOfNameValuePair>
+            </core:NameValueSet>
+            <core:NameValueSet>
+                <core:SetName>Job</core:SetName>
+                <core:SetID>10130718</core:SetID>
+                <core:ListOfNameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>Name</core:Name>
+                        <core:Value>84210310319 - 20390 Hudson Bay LN</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>Address1</core:Name>
+                        <core:Value>20390 Hudson Bay LN</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>Address2</core:Name>
+                        <core:Value />
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>City</core:Name>
+                        <core:Value>Westfield</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>PostalCode</core:Name>
+                        <core:Value>46074</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>RegionCoded</core:Name>
+                        <core:Value>USIN</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>Subdivision</core:Name>
+                        <core:Value>Monon Corner</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>SubdivisionID</core:Name>
+                        <core:Value>33958109</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>Phase</core:Name>
+                        <core:Value>Phase 0</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>Lot</core:Name>
+                        <core:Value>0319</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>Block</core:Name>
+                        <core:Value />
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>Plan</core:Name>
+                        <core:Value>V141</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>Elevation</core:Name>
+                        <core:Value>TRM</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>Swing</core:Name>
+                        <core:Value>L</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>PermitNumber</core:Name>
+                        <core:Value>24-RSFR-1089</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>StartDate</core:Name>
+                        <core:Value>12/12/2024</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>EndDate</core:Name>
+                        <core:Value>5/12/2025</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>ColorPackage</core:Name>
+                        <core:Value />
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>JIOID</core:Name>
+                        <core:Value>0</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>PrimaryFirstName</core:Name>
+                        <core:Value>Isaac</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>PrimaryLastName</core:Name>
+                        <core:Value>Smith</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>PrimaryPhoneNumber</core:Name>
+                        <core:Value>3177195659</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>PrimaryFaxNumber</core:Name>
+                        <core:Value />
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>PrimaryEmailAddress</core:Name>
+                        <core:Value>isaac.smith@beazer.com</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>CommunityCode</core:Name>
+                        <core:Value />
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>CommunityID</core:Name>
+                        <core:Value>0</core:Value>
+                    </core:NameValuePair>
+                    <core:NameValuePair>
+                        <core:Name>GroupDescription</core:Name>
+                        <core:Value>Default</core:Value>
+                    </core:NameValuePair>
+                </core:ListOfNameValuePair>
+            </core:NameValueSet>
+        </ListOfNameValueSet>
+    </OrderHeader>
+    <OrderDetail>
+        <ListOfItemDetail>
+            <ItemDetail>
+                <BaseItemDetail>
+                    <LineItemNum>
+                        <core:BuyerLineItemNum>113209912</core:BuyerLineItemNum>
+                    </LineItemNum>
+                    <ItemIdentifiers>
+                        <core:PartNumbers>
+                            <core:SellerPartNumber>
+                                <core:PartID>CONTRACT</core:PartID>
+                            </core:SellerPartNumber>
+                            <core:BuyerPartNumber>
+                                <core:PartID>111111111</core:PartID>
+                            </core:BuyerPartNumber>
+                        </core:PartNumbers>
+                        <core:ItemDescription>For Schedule Only</core:ItemDescription>
+                    </ItemIdentifiers>
+                    <ListOfDimension>
+                        <core:Dimension>
+                            <core:Measurement>
+                                <core:MeasurementValue>0.00</core:MeasurementValue>
+                                <core:UnitOfMeasurement>
+                                    <core:UOMCoded>EA</core:UOMCoded>
+                                </core:UnitOfMeasurement>
+                            </core:Measurement>
+                            <core:DimensionCoded>LengthDimension</core:DimensionCoded>
+                        </core:Dimension>
+                    </ListOfDimension>
+                    <TotalQuantity>
+                        <core:QuantityValue>1</core:QuantityValue>
+                        <core:UnitOfMeasurement>
+                            <core:UOMCoded>EA</core:UOMCoded>
+                        </core:UnitOfMeasurement>
+                    </TotalQuantity>
+                </BaseItemDetail>
+                <PricingDetail>
+                    <core:ListOfPrice>
+                        <core:Price>
+                            <core:PricingType>
+                                <core:PriceTypeCoded>Other</core:PriceTypeCoded>
+                                <core:PriceTypeCodedOther>Requested</core:PriceTypeCodedOther>
+                            </core:PricingType>
+                            <core:UnitPrice>
+                                <core:UnitPriceValue>0.00</core:UnitPriceValue>
+                            </core:UnitPrice>
+                            <core:UnitOfMeasurement>
+                                <core:UOMCoded>EA</core:UOMCoded>
+                            </core:UnitOfMeasurement>
+                        </core:Price>
+                    </core:ListOfPrice>
+                    <core:LineItemSubTotal>
+                        <core:MonetaryAmount>0.00</core:MonetaryAmount>
+                    </core:LineItemSubTotal>
+                </PricingDetail>
+                <ListOfNameValueSet>
+                    <core:NameValueSet>
+                        <core:SetName>OtherItemDescriptors</core:SetName>
+                        <core:SetID>1</core:SetID>
+                        <core:ListOfNameValuePair>
+                            <core:NameValuePair>
+                                <core:Name>OptionColor1</core:Name>
+                                <core:Value />
+                            </core:NameValuePair>
+                            <core:NameValuePair>
+                                <core:Name>OptionColor2</core:Name>
+                                <core:Value />
+                            </core:NameValuePair>
+                            <core:NameValuePair>
+                                <core:Name>OptionColor3</core:Name>
+                                <core:Value />
+                            </core:NameValuePair>
+                            <core:NameValuePair>
+                                <core:Name>ExtText1</core:Name>
+                                <core:Value />
+                            </core:NameValuePair>
+                            <core:NameValuePair>
+                                <core:Name>ExtText2</core:Name>
+                                <core:Value />
+                            </core:NameValuePair>
+                            <core:NameValuePair>
+                                <core:Name>ExtText3</core:Name>
+                                <core:Value />
+                            </core:NameValuePair>
+                            <core:NameValuePair>
+                                <core:Name>ExtText4</core:Name>
+                                <core:Value />
+                            </core:NameValuePair>
+                            <core:NameValuePair>
+                                <core:Name>ExtText5</core:Name>
+                                <core:Value />
+                            </core:NameValuePair>
+                            <core:NameValuePair>
+                                <core:Name>ExtText6</core:Name>
+                                <core:Value />
+                            </core:NameValuePair>
+                            <core:NameValuePair>
+                                <core:Name>SelectionDesc</core:Name>
+                                <core:Value />
+                            </core:NameValuePair>
+                            <core:NameValuePair>
+                                <core:Name>HomeSelectionInd</core:Name>
+                                <core:Value>0</core:Value>
+                            </core:NameValuePair>
+                            <core:NameValuePair>
+                                <core:Name>PackageItemID</core:Name>
+                                <core:Value />
+                            </core:NameValuePair>
+                            <core:NameValuePair>
+                                <core:Name>DoNotTransmitSPConnect</core:Name>
+                                <core:Value />
+                            </core:NameValuePair>
+                        </core:ListOfNameValuePair>
+                    </core:NameValueSet>
+                </ListOfNameValueSet>
+            </ItemDetail>
+        </ListOfItemDetail>
+    </OrderDetail>
+    <OrderSummary>
+        <NumberOfLines>1</NumberOfLines>
+        <ListOfTaxSummary>
+            <core:TaxSummary>
+                <core:TaxTypeCoded>Total</core:TaxTypeCoded>
+                <core:TaxTypeCodedOther>
+                    <core:Agency>
+                        <core:AgencyCoded>AssignedByMarketPlace</core:AgencyCoded>
+                    </core:Agency>
+                    <core:Ident />
+                </core:TaxTypeCodedOther>
+                <core:TaxFunctionQualifierCoded>Tax</core:TaxFunctionQualifierCoded>
+                <core:TaxCategoryCoded>Other</core:TaxCategoryCoded>
+                <core:TaxAmount>0.00</core:TaxAmount>
+            </core:TaxSummary>
+        </ListOfTaxSummary>
+        <OrderSubTotal>
+            <core:MonetaryAmount>0.00</core:MonetaryAmount>
+        </OrderSubTotal>
+        <OrderTotal>
+            <core:MonetaryAmount>0.00</core:MonetaryAmount>
+        </OrderTotal>
+    </OrderSummary>
+</Order>
