@@ -1,0 +1,101 @@
+# SnowSQL Installation and Configuration Guide
+
+## Step 1: Download SnowSQL
+
+1. Go to the Snowflake website and download the appropriate installer for your operating system:
+   - For Windows: Download the `snowsql-windows_x86_64.msi` installer
+   - For Mac/Linux: Download the appropriate package for your system
+   - The installer can be found in the Snowflake web interface under Help > Download
+
+## Step 2: Install SnowSQL
+
+For Windows:
+1. Open the downloaded `snowsql-windows_x86_64.msi` file
+2. Follow the installer instructions
+3. The default installation directory will be `%ProgramFiles%\Snowflake SnowSQL`
+4. Alternatively, you can install via command line:
+   ```powershell
+   msiexec /i snowsql-windows_x86_64.msi /q
+   ```
+
+## Step 3: Configure SnowSQL
+
+1. Create/edit the configuration file:
+   - Location: `%USERPROFILE%\.snowsql\config`
+   - If it doesn't exist, running `snowsql` for the first time will generate it
+
+2. Add your connection details to the config file:
+   ```ini
+   [connections]
+   # Default connection parameters
+   accountname = your_account_identifier    # e.g., xy12345.east-us-2.azure
+   username = your_username
+   password = your_password
+   
+   # Optional parameters
+   dbname = your_database                   # Default database
+   schemaname = your_schema                 # Default schema
+   warehousename = your_warehouse           # Default warehouse
+   rolename = your_role                     # Default role
+   
+   [options]
+   # Optional settings
+   auto_completion = True
+   output_format = psql
+   log_level = INFO
+   timing = True
+   ```
+
+## Step 4: Secure the Configuration (Important!)
+
+Since the password is stored in plain text, secure the config file:
+- For Windows, right-click the config file → Properties → Security → Edit permissions to restrict access to only your user account
+
+## Step 5: Verify Installation
+
+1. Open a command prompt
+2. Check the SnowSQL version:
+   ```powershell
+   snowsql -v
+   ```
+
+## Step 6: Connect to Snowflake
+
+After configuration, you can connect using:
+```powershell
+snowsql
+```
+
+Or with specific parameters (overriding config file):
+```powershell
+snowsql -a <account> -u <username> -d <database> -w <warehouse>
+```
+
+## Additional Tips
+
+1. If you need to use a specific version of SnowSQL, you can force it using:
+   ```powershell
+   snowsql -v <version_number>
+   ```
+2. The configuration file supports multiple connection profiles under different names
+3. You can use environment variables instead of storing credentials in the config file
+4. For passwords with special characters, enclose them in single or double quotes in the config file
+
+## Common Issues and Solutions
+
+1. If you encounter connection issues:
+   - Verify your account identifier format is correct
+   - Check your network connectivity
+   - Ensure your credentials are correct
+   - Verify your firewall settings
+
+2. If you need to update SnowSQL:
+   - The client will auto-update when connected to Snowflake
+   - You can force a specific version using the -v flag
+
+## Security Best Practices
+
+1. Never share your config file containing credentials
+2. Regularly rotate your passwords
+3. Consider using SSO or external browser authentication when possible
+4. Use the minimum required role privileges for your connections 
