@@ -104,11 +104,87 @@ ON_ERROR = 'CONTINUE';
 
 -- Step 6: Create normalized tables for better querying
 -- Orders Header Table
-CREATE OR REPLACE TABLE orders_header AS
+
+-- This query might be returning blank values because:
+-- 1. The XML path might be incorrect - XML is case-sensitive
+-- 2. The XML might have namespaces that need to be referenced
+-- 3. The elements might be in a different structure than expected
+
+-- Try these approaches:
+-- Option 1: Check the actual XML structure first
+SELECT file_name, raw_xml 
+FROM raw_xml_orders
+LIMIT 1;
+
+-------------------------------------------------------------------------------------------------
+--DAS: this one works
 SELECT 
-    raw_xml:Order.OrderHeader.OrderNumber.BuyerOrderNumber::STRING as buyer_order_number,
-    raw_xml:Order.OrderHeader.OrderIssueDate::TIMESTAMP_NTZ as order_issue_date,
-    raw_xml:Order.OrderHeader.OrderReferences.AccountCode.core:RefNum::STRING as account_code,
+    XMLGET(XMLGET(XMLGET(raw_xml, 'OrderHeader'), 'OrderNumber'), 'BuyerOrderNumber'):"$"::STRING as buyer_order_number,
+    XMLGET(XMLGET(raw_xml, 'OrderHeader'), 'OrderIssueDate'):"$"::TIMESTAMP_NTZ as order_issue_date,
+    XMLGET(XMLGET(XMLGET(raw_xml, 'OrderHeader'), 'OrderReferences'), 'AccountCode'):"@core:RefNum"::STRING as account_code,
+    file_name as source_file,
+    upload_timestamp
+FROM raw_xml_orders;
+----------------------------------------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------------
+--DAS: this one works
+SELECT 
+    -- Extract Buyer Order Number from nested OrderHeader/OrderNumber structure
+    XMLGET(
+        XMLGET(
+            XMLGET(raw_xml, 'OrderHeader'),
+            'OrderNumber'
+        ),
+        'BuyerOrderNumber'
+    ):"$"::STRING as buyer_order_number,
+    
+    -- Extract Order Issue Date directly from OrderHeader
+    XMLGET(
+        XMLGET(raw_xml, 'OrderHeader'),
+        'OrderIssueDate'
+    ):"$"::TIMESTAMP_NTZ as order_issue_date,
+    
+    -- Extract Account Code Reference Number from OrderHeader/OrderReferences
+    XMLGET(
+        XMLGET(
+            XMLGET(raw_xml, 'OrderHeader'),
+            'OrderReferences'
+        ),
+        'AccountCode'
+    ):"@core:RefNum"::STRING as account_code,
+    
+    -- Include source file information
+    file_name as source_file,
+    upload_timestamp
+FROM 
+    raw_xml_orders; 
+--------------------------------------------------------------------------------------------------------
+
+-- Option 2: Use the XMLGET function which is more reliable for extracting elements
+-- Option 1: Using XMLGET with namespace handling
+SELECT 
+    XMLGET(raw_xml, 'BuyerOrderNumber', 'xmlns'):"$"::STRING as buyer_order_number,
+    XMLGET(raw_xml, 'OrderIssueDate', 'xmlns'):"$"::TIMESTAMP_NTZ as order_issue_date,
+    XMLGET(XMLGET(raw_xml, 'AccountCode', 'xmlns'), 'RefNum', 'core'):"$"::STRING as account_code,
+    file_name as source_file,
+    upload_timestamp
+FROM raw_xml_orders;
+
+-- Option 2: Using path notation with explicit namespace references
+SELECT 
+    raw_xml:"$"."Order"."OrderHeader"."OrderNumber"."BuyerOrderNumber"::STRING as buyer_order_number,
+    raw_xml:"$"."Order"."OrderHeader"."OrderIssueDate"::TIMESTAMP_NTZ as order_issue_date,
+    raw_xml:"$"."Order"."OrderHeader"."OrderReferences"."AccountCode"."@core:RefNum"::STRING as account_code,
+    file_name as source_file,
+    upload_timestamp
+FROM raw_xml_orders;
+
+-- Option 3: Using XMLGET with fully qualified paths
+SELECT 
+    XMLGET(XMLGET(XMLGET(XMLGET(raw_xml, 'Order'), 'OrderHeader'), 'OrderNumber'), 'BuyerOrderNumber'):"$"::STRING as buyer_order_number,
+    XMLGET(XMLGET(raw_xml, 'Order'), 'OrderHeader'):"OrderIssueDate"::TIMESTAMP_NTZ as order_issue_date,
+    XMLGET(XMLGET(XMLGET(XMLGET(raw_xml, 'Order'), 'OrderHeader'), 'OrderReferences'), 'AccountCode'):"@core:RefNum"::STRING as account_code,
     file_name as source_file,
     upload_timestamp
 FROM raw_xml_orders;
@@ -124,6 +200,17 @@ ORDER BY order_issue_date DESC;
 
 -- Query 2: Parse nested XML elements using FLATTEN
 -- This example shows how to handle repeating elements if they exist in the XML
+
+SELECT 
+    XMLGET(XMLGET(XMLGET(raw_xml, 'OrderHeader'), 'OrderNumber'), 'BuyerOrderNumber'):"$"::STRING as buyer_order_number,
+    XMLGET(XMLGET(raw_xml, 'OrderHeader'), 'OrderIssueDate'):"$"::TIMESTAMP_NTZ as order_issue_date,
+    XMLGET(XMLGET(XMLGET(raw_xml, 'OrderHeader'), 'OrderReferences'), 'AccountCode'):"@core:RefNum"::STRING as account_code
+FROM raw_xml_orders,
+LATERAL FLATTEN(input => raw_xml:Order.OrderHeader.OrderReferences.OtherOrderReferences.core:ReferenceCoded) f;
+
+
+
+
 SELECT 
     buyer_order_number,
     f.value:core:ReferenceTypeCoded::STRING as reference_type,
@@ -164,4 +251,43 @@ SELECT
     MAX(upload_timestamp) as last_load
 FROM raw_xml_orders
 GROUP BY 1
-ORDER BY 1 DESC; 
+ORDER BY 1 DESC;
+
+-- New query with improved readability and maintainability
+--------------------------------------------------------------------------------------------------------
+--DAS: this one works
+SELECT 
+    -- Extract Buyer Order Number from nested OrderHeader/OrderNumber structure
+    XMLGET(
+        XMLGET(
+            XMLGET(raw_xml, 'OrderHeader'),
+            'OrderNumber'
+        ),
+        'BuyerOrderNumber'
+    ):"$"::STRING as buyer_order_number,
+    
+    -- Extract Order Issue Date directly from OrderHeader
+    XMLGET(
+        XMLGET(raw_xml, 'OrderHeader'),
+        'OrderIssueDate'
+    ):"$"::TIMESTAMP_NTZ as order_issue_date,
+    
+    -- Extract Account Code Reference Number from OrderHeader/OrderReferences
+    XMLGET(
+        XMLGET(
+            XMLGET(raw_xml, 'OrderHeader'),
+            'OrderReferences'
+        ),
+        'AccountCode'
+    ):"@core:RefNum"::STRING as account_code,
+    
+    -- Include source file information
+    file_name as source_file,
+    upload_timestamp
+FROM 
+    raw_xml_orders; 
+--------------------------------------------------------------------------------------------------------
+
+
+
+
